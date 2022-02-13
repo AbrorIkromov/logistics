@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InTruck - Logistics service</title>
+    <link rel="shortcut icon" href="./img/logo-adjust.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style_page1.css">
+    <link rel="stylesheet" href="./jQuery/jquery-ui-1.12.1/jquery-ui.min.css">
+    <!-- Bootstrap_css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <!-- font awesome -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+     <!-- OWL CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;800&family=Oswald&family=Rubik&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+      <!-- Contacts -->
+        <div class="top-head custom-text">
+          <img src="./img/logo.jpg" alt="logo">
+            <div class="brand"><span id="In">In</span><span>Truck</span> <e class="mobile-logo"> &mdash; Logistics Service</e></div>
+            <div id="number"><i class="fas fa-phone-alt"></i> +998 99 999 88 77</div>
+            <div id="email"><i class="fas fa-envelope"></i> anyname@gmail.com</div>
+            <a href="https://forms.gle/zzHNwNBmmesoyfqu9" id="btn-register">Become a Driver</a>
+        </div>
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+          <div class="container-fluid">
+              <img src="./img/logo.jpg" alt="logo">
+              <div class="brand"><span id="In">In</span><span>Truck</span></div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span id="humburger-icon" class="navbar-toggler-icon"></span>
+                </button>
+                <div style="width: 75vw;" class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <img src="./img/logo.jpg" alt="logo">
+                        <div class="offcanvas-title brand" id="offcanvasNavbarLabel"><span id="In">In</span><span>Truck</span> - Logistics</div>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content flex-grow-1 pe-3">
+                        <li class="nav-item close">
+                            <a href="#" class="nav-link nav-active" aria-current="page" id='custom-color' data-bs-dismiss="offcanvas">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item close">
+                            <a href="#" class="nav-link" id='custom-color'>Our Services</a>
+                        </li>
+                        <li class="nav-item close">
+                            <a href="#" class="nav-link" id='custom-color'>Career</a>
+                        </li>
+                        <li class="nav-item close">
+                            <a href="#contact-us" class="nav-link" id='custom-color'>Contact Us</a>
+                        </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Carousel -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="5000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div src="..." class="d-block w-100 pic1" alt=""></div>
+            <div id='scroll-trigger-1' class="carousel-caption d-md-block">
+              <div class="non-mobile-caption">
+              <div id="scroll-trigger-1" class="brand"><span id="In">IN</span><span>TRUCK</span> - Logistics Service</div>
+                <p id="carousel-big-title">The Experts in Logistics</p>
+                <p class="sub-info" id="scroll-trigger-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ratione repellendus facilis dolorem unde ab?</p>
+              </div>
+                <div class="mobile-caption">
+                  <div id="scroll-trigger-1" class="brand"><span id="In">IN</span><span>TRUCK</span> &mdash; Logistics</div>
+                    <p>Start your path with us!</p>
+                </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <div src='...' class="d-block w-100 pic2"></div>
+            <div id='scroll-trigger-1' class="carousel-caption d-md-block">
+              <div class="non-mobile-caption">
+              <div id="scroll-trigger-1" class="brand"><span id="In">IN</span><span>TRUCK</span> - Logistics Service</div>
+                <p id="carousel-big-title">The Experts in Logistics</p>
+                <p class="sub-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ratione repellendus facilis dolorem unde ab?</p>
+                </div>
+                <div class="mobile-caption">
+                  <div id="scroll-trigger-1" class="brand"><span id="In">IN</span><span>TRUCK</span> &mdash; Logistics</div>
+                    <p>Start your path with us!</p>
+                </div>
+              </div>
+            </div>
+          <div class="carousel-item">
+            <div src='...' class="d-block w-100 pic3"></div>
+            <div id='scroll-trigger-1' class="carousel-caption d-md-block">
+              <div class="non-mobile-caption">
+              <div id="scroll-trigger-1" class="brand"><span id="In">IN</span><span>TRUCK</span> - Logistics Service</div>
+                <p id="carousel-big-title">The Experts in Logistics</p>
+                <p class="sub-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ratione repellendus facilis dolorem unde ab?</p>
+                </div>
+                <div class="mobile-caption">
+                  <div id="scroll-trigger-1" class="brand"><span id="In">IN</span><span>TRUCK</span> &mdash; Logistics</div>
+                    <p>Start your path with us!</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          </div>
+          <a class="carousel-driver-btn" href="https://forms.gle/zzHNwNBmmesoyfqu9">Become a Driver</a>
+        <!-- <div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> -->
+
+      <!-- three cards -->
+    <div class="three-cards-wraper custom-text">
+      <div class="mobile-card-header">
+        <h4>OUR SERVICES</h4>
+      </div>
+      <div id="scroll-trigger-2" class="three-cards-container">
+        <div class="card1">
+          <div class="img min-img1"></div>
+          <div class="text">
+            <h5><i class="fas fa-truck"></i> Road Freight</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio ut soluta architecto ad tenetur error.</p>
+          </div>
+        </div>
+        <div class="card2">
+          <div class="img min-img2"></div>
+          <div class="text">
+            <h5><i class="fas fa-ship"></i> Sea Freight</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio ut soluta architecto ad tenetur error.</p>
+          </div>
+        </div>
+        <div class="card3">
+          <div class="img min-img3"></div>
+          <div class="text">
+            <h5><i class="fas fa-plane"></i> Air Freight</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio ut soluta architecto ad tenetur error.</p>
+          </div>
+        </div>
+      </div>
+      <!-- cards for mobile -->
+
+      <div class="carousel-custom">
+        <div id="carouselExampleIndicators" class="carousel slide slide-custom" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner carousel-inner-custom">
+              <div class="carousel-item carousel-item-custom active">
+                <div class="carousel-card1">
+                  <div class="carousel-card-img-1"></div>
+                  <div class="carousel-card-info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quo itaque! Nihil veritatis pariatur aut.
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item carousel-item-custom">
+               <div class="carousel-card2">
+                  <div class="carousel-card-img-2"></div>
+                  <div class="carousel-card-info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quo itaque! Nihil veritatis pariatur aut.
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item carousel-item-custom">
+               <div class="carousel-card3">
+                  <div class="carousel-card-img-3"></div>
+                  <div class="carousel-card-info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quo itaque! Nihil veritatis pariatur aut.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+      <div class="cards-sub-info">
+      <span id="scroll-trigger-4" class="additional-services"><b>and we also have many more services to <span>have you covered</span></b> </span> <a id='scroll-trigger-5' class='view-services' href="">VIEW ALL SERVICES <i class="fas fa-angle-double-right"></i></a>
+     </div>
+    </div>
+
+    <!-- additional info -->
+    <div id="scroll-trigger-6" class="additional-info custom-text">
+      <p>
+        In InTruck Logistics Service quality of transportation service is not just what our valued service partners expect, 
+        it's what they deserve. That's why it is our goal to meet and exceed the expectations of every client, every time! 
+      </p>
+      <div class="line"></div>
+    </div>
+
+    <!-- About Us -->
+    <div class="about-us-header">ABOUT US</div>
+    <div class="about-us-container">
+      <div class="about-us-info-container custom-text">
+        <!-- <h4>ABOUT US</h4> should be uncommented if not liked -->
+        <div class="about-us-sub-heading">
+          <h5 id="who" class="sub-head-h5 about-active">Who we are?</h5> 
+          <h5 id="what" class="sub-head-h5">What we do?</h5> 
+          <h5 id="how" class="sub-head-h5">How we work?</h5> 
+        </div>
+        <div class="who visible">
+        <p>
+          <span class="indent-line">Who we are? &mdash;</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatem suscipit, 
+          veritatis nostrum deleniti iste magni quibusdam quasi reprehenderit odio who we are?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem totam pariatur consequatur 
+          incidunt perspiciatis distinctio accusamus nisi in facere nulla aliquid cum quis, accusantium 
+          amet fugiat eligendi, dolor aspernatur? Nesciunt labore mollitia, voluptates officia error molestias earum? 
+          Quisquam, veniam ea!
+        </p>
+      </div>
+        <div class="what">
+        <p>
+          <span class="indent-line">What we do? &mdash;</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatem suscipit, 
+          veritatis nostrum deleniti iste magni quibusdam quasi reprehenderit odio what we do?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem totam pariatur consequatur 
+          incidunt perspiciatis distinctio accusamus nisi in facere nulla aliquid cum quis, accusantium 
+          amet fugiat eligendi, dolor aspernatur? Nesciunt labore mollitia, voluptates officia error
+        </p>
+      </div>
+        <div class="how">
+        <p>
+          <span class="indent-line">How we do? &mdash;</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatem suscipit, 
+          veritatis nostrum deleniti iste magni quibusdam quasi reprehenderit odio what we do?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem totam pariatur consequatur 
+          incidunt perspiciatis distinctio accusamus nisi in facere nulla aliquid cum quis, accusantium 
+          amet fugiat eligendi, dolor aspernatur? Nesciunt labore mollitia, voluptates officia error molestias earum? 
+          Quisquam, veniam ea!
+        </p>
+      </div>
+        <a class="more-about-us" href="#">MORE ABOUT US <i class="fas fa-angle-double-right"></i></a>
+      </div>
+
+      <div class="about-us-img-container">
+        <div class="about-try-img"> <img src="./img/about-us2.svg" width='450px' alt=""></div>
+        <!-- <div class="about-us-img1"></div>
+        <div class="about-us-img2"></div> -->
+      </div>
+    </div>
+
+    <div class="additional-decoration">
+      <div class="decoration-title">
+        <span>A short film about InTruck</span>
+        <br>
+        <br>
+        <h4>Pursue your career with InTruck</h4>
+        <div class="line"></div>
+      </div>
+      <div class="decoration-img"></div>
+    </div>
+
+    <!-- Why us -->
+    <div class="why-us-header">WHY US</div>
+    <div class="why-us-container">
+
+      <div class="why-us-img-container">
+        <div class="why-try-img"> <img src="./img/why-us2.svg" width='450px' alt=""></div>
+        <!-- <div class="why-us-img1"></div>
+        <div class="why-us-img2"></div> -->
+      </div>
+
+      <div class="why-us-info-container custom-text">
+        <!-- <h4>WHY US?</h4> -->
+       
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatem suscipit, 
+          veritatis nostrum deleniti iste magni quibusdam quasi reprehenderit odio?
+        </p>
+        <div class="statistics">
+          <div class="line1">
+            <div class="icon"><i class="far fa-thumbs-up"></i></div>
+            <div class="customer">
+              <div class="statistics-correction"><span class="statistic-info counter-k" data-target="1000">0</span>&plus;</div>
+              <h6 class='statistics-span'>Happy Customers</h6>
+            </div>
+              <div class="icon"><i class="far fa-clock"></i></div>
+            <div class="delivery">
+              <div class="statistics-correction"> <span class="statistic-info counter-98" data-target="98">0</span>&percnt;</div>
+              <h6 class='statistics-span'>On-Time Delivery</h6>
+            </div>
+          </div>
+          <div class="line2">
+            <div class="icon"><i class="fas fa-truck"></i></div>
+            <div class="drivers"> 
+            <div class="statistics-correction"><span class="statistic-info counter-100" data-target="100">0</span>&plus;</div>
+              <h6 class='statistics-span'>Active Drivers</h6>
+            </div>
+            <div class="icon"><i class="fas fa-people-arrows"></i></div>
+            <div class="turnover">
+            <div class="statistics-correction"><span class="statistic-info counter-15" data-target="15">0 </span>&percnt;</div>
+              <h6 class='statistics-span'>Driver turnover</h6>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- faqs and reviw -->
+
+    <div class="last-section">
+      <div class="faqs">
+        <h5>FAQS</h5>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button id="scroll-trigger-7" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+               Till what time do you work?
+              </button>
+            </h2>
+            <div id="flush-collapseOne"  class="accordion-collapse collapse scroll-trigger-7 show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                InTruck Logistics offers 24/7 service to its customers to keep them happy. Lorem ipsum dolor sit amet consectetur.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Placeholder consectetur, adipisicing elit?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odio atque et molestias earum quo. Mollitia cupiditate, 
+                a placeat eum quaerat perspiciatis quos vero possimus iusto, quis molestiae, accusantium minus.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Quos vero possimus iusto, quis molestiae consectetur adipisicing elit?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem, porro maiores iure voluptatibus consectetur!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Placeholder consectetur, adipisicing elit?
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odio atque et molestias earum quo. Mollitia cupiditate, 
+                a placeat eum quaerat perspiciatis quos vero possimus iusto, quis molestiae, accusantium minus.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                Placeholder consectetur, adipisicing elit?
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odio atque et molestias earum quo. Mollitia cupiditate, 
+                a placeat eum quaerat perspiciatis quos vero possimus iusto, quis molestiae, accusantium minus.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="review">
+        <h5>WE GET PEOPLE SAYING</h5>
+        <main>
+          <div id="review-content">
+              <div id="imgContainer">
+                  <img id="img" src=''>
+              </div>
+              <h3 id="author">John Smith</h3>
+              <h4 id="job">Web Developer</h4>
+              <p id="info">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus vero temporibus dignissimos in
+              eveniet! Praesentium amet nobis unde itaque obcaecati necessitatibus earum nam, atque fugiat similique 
+              </p>
+              <div id="btnDiv">
+                  <button class="btn-review" id="prev">Previous</button>
+                  <!-- <button class="btn-review" id="surprise">Surprise me!</button> -->
+                  <button class="btn-review" id="next">Next</button>
+              </div>
+          </div>
+      </main>
+      </div>
+    </div>
+    <!-- Partners -->
+
+    <div class="container-fluid my-5 partners" >
+      <h5 class="text-center fw-bold display-6 mb-5"> OUR PARNTERS</h5>
+      <div class="row">
+          <div class="col-12 m-auto">
+              <div class="owl-carousel owl-theme">
+                  <div class="item mb-4">
+                      <div class=" card border-0 shadow">
+                          <img src="./pnt/partner-amazon.png" alt="" >
+                      </div>
+                  </div>
+
+                  <div class="item">
+                      <div class="card border-0 shadow">
+                          <img src="./pnt/partner-hunt.png" alt="" >
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="card border-0 shadow">
+                          <img src="./pnt/partner-robinson.png" alt="" >
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="card border-0 shadow">
+                          <img src="./pnt/partner-ups.png" alt="" >
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="card border-0 shadow">
+                          <img src="./pnt/xpo.png" alt="" >
+                      </div>
+                  </div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+
+    <!-- <div class="owl-container">
+      <div class="owl-inner">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="./img/driver.jpg" alt="">
+          </div>
+      </div>
+      </div>
+    </div> -->
+    <!-- footer -->
+    <footer id="contact-us">
+      <div class="map">
+        <!-- <div><img class="footer-logo" src="./img/logo-white.png"></div> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13569.334836513095!2d21.303626782266694!3d52.45926316528028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471edd317c20d933%3A0x1c18dae0f460ee61!2sINTRUCK%20Sp.%20o.o.!5e0!3m2!1sen!2s!4v1638552877261!5m2!1sen!2s" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="links">
+        <ul>
+          <h5>Quick Links</h5>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Career info</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="quick-contacts">
+        <h5>Quick Contacts</h5>
+        <ul>
+          <li><span><i class="fas fa-map-marker-alt"></i> 4255 Westbrook Dr Aurora, IL 60504</span></li>
+          <li><span><i class="fas fa-phone-alt"></i> +998 99 888 77 66</span></i></li>
+          <li><span><i class="fas fa-envelope"></i> anyname@gmail.com</span></i></li>
+          <div class="media">
+            <i class="fab fa-telegram"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </ul>
+      </div>
+    </footer>
+    <div class="footer-logo"><img width="270px" src="./img/logo-white.png"></div>
+    <!-- copyright -->
+    <div class="copyright">
+      <p>&copy; InTruck &mdash; All Rights Reserved</p>
+    </div>
+
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- Bootstrap JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- OWl CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Javascript -->
+<script src="./script.js"></script>
+<!-- Scroll Magic -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<!-- jQuery -->
+<script src="./jQuery/jquery-3.6.0.js"></script>
+
+</body>
+</html>
